@@ -10,6 +10,9 @@ import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 
+if "outputs" not in os.listdir():
+    os.mkdir("./outputs")
+
 def clean_data(data):
     # Dict for cleaning data
     months = {"jan":1, "feb":2, "mar":3, "apr":4, "may":5, "jun":6, "jul":7, "aug":8, "sep":9, "oct":10, "nov":11, "dec":12}
@@ -70,6 +73,8 @@ def main():
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
+
+    joblib.dump(model,'outputs/model.joblib') # Add this code to save model
 
 if __name__ == '__main__':
     main()
