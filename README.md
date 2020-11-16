@@ -34,7 +34,7 @@ This model is then compared to an Azure AutoML run.
 
 - Some example models used by AutoML are: LightGMB, XGBoostClassifier, SGD, RandomForest, ExtremeRandomTrees, Voting Ensemble and Stack Ensemble.
 
-- The best model geneated by AutoML was a Voting Ensemble model. The parameters were: 
+- The best model geneated by AutoML was a Voting Ensemble model. The hyperparameters were: 
 	min_samples_leaf=0.06157894736842105,                                                                                           min_samples_split=0.10368421052631578,
 	min_weight_fraction_leaf=0.0,
 	n_estimators=50,
