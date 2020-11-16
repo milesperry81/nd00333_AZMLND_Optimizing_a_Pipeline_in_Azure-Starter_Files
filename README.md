@@ -22,7 +22,7 @@ This model is then compared to an Azure AutoML run.
 - The Hyperdrive class allows multiple runs of the algorithm using different choices of hyperparameters in order to find the most accurate model. Different combinations of the max number of iterations and an inverse regularisation parameter were tried. 
 
 **What are the benefits of the parameter sampler you chose?**
-- I used random parameter sampling to make random hyperparameter choices over the defined hyperparameter space for a maximum number of runs. Random sampling can reduce the number of samples taken across the entire hyperparameter space. Research has shown that it often yields similar results to sampling the entire hyperparameter whilst conserves computing resources.
+- I used random parameter sampling to make random hyperparameter choices over the defined hyperparameter space for a maximum number of runs. Random sampling can reduce the number of samples taken across the entire hyperparameter space. Research has shown that it often yields similar results to sampling the entire hyperparameter whilst it conserves computing resources.
 
 **What are the benefits of the early stopping policy you chose?**
 - I used a bandit early stopping policy. It checks the run every 2 iterations. If accuracy falls outside the top 10% then it will terminate the run. This saves me time and compute power by cancelling runs that would yield poor accuracy results.
