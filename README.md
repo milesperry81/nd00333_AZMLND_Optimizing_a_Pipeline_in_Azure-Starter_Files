@@ -108,7 +108,7 @@ datatransformer
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
-- The Hyperdrive experiment was restricted to a single Logistic Regression model only and the choice of hyperparameter was contrained by the hyperparameter space set by myself. I would like to explore a larger hyperparameter space and see if this improves the Logistic Regression model.
+- The Hyperdrive experiment was restricted to a single Logistic Regression model only and the choice of hyperparameter was constrained by the hyperparameter space set by myself. I would like to explore a larger hyperparameter space and see if this improves the Logistic Regression model.
 
 - Running AutoML for a greater number of iterations and allowing it to explore more variations in models and hyperparamters may see improvements in the best model accuracy.
 
